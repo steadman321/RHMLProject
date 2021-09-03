@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unittest Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2021-08-26 15:05:38</p>
+                <p class='attribute'><strong>Duration: </strong>41.43 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 14, Pass: 14</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>testRegressionTrees.TestRegressionTrees</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_performanceRegressionTree</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>*************************************************************************
+Have a tree with nodes .... lets take a look at each node .... 
+Node index 0	: datasize :670	 : Split feature: 1	 threashold: 0.06818062438386235	 leftNode: 1	 rightNode: 2
+Node index 1	: datasize :343	 : Split feature: 1	 threashold: -0.999225208614816	 leftNode: 3	 rightNode: 4
+Node index 2	: datasize :327	 : Split feature: 0	 threashold: 0.32971497562084595	 leftNode: 43	 rightNode: 44
+Node index 3	: datasize :94	 : Split feature: 0	 threashold: -0.4171783266348512	 leftNode: 5	 rightNode: 6
+Node index 4	: datasize :249	 : Split feature: 0	 threashold: 0.4351815141705738	 leftNode: 13	 rightNode: 14
+Node index 5	: datasize :39	 : Split feature: 1	 threashold: -1.598268406375445	 leftNode: 7	 rightNode: 8
+Node index 6	: datasize :55	 : Split feature: 1	 threashold: -1.7833595187908924	 leftNode: 9	 rightNode: 10
+Node index 7	: datasize :18	 : No Split 
+Node index 8	: datasize :21	 : No Split 
+Node index 9	: datasize :13	 : No Split 
+Node index 10	: datasize :42	 : Split feature: 0	 threashold: 0.1750921730694498	 leftNode: 11	 rightNode: 12
+Node index 11	: datasize :21	 : No Split 
+Node index 12	: datasize :21	 : No Split 
+Node index 13	: datasize :154	 : Split feature: 0	 threashold: -0.946477565956156	 leftNode: 15	 rightNode: 16
+Node index 14	: datasize :95	 : Split feature: 0	 threashold: 1.047052273196614	 leftNode: 31	 rightNode: 32
+Node index 15	: datasize :43	 : Split feature: 1	 threashold: -0.3191814614628834	 leftNode: 17	 rightNode: 18
+Node index 16	: datasize :111	 : Split feature: 1	 threashold: -0.42995941509140384	 leftNode: 19	 rightNode: 20
+Node index 17	: datasize :22	 : No Split 
+Node index 18	: datasize :21	 : No Split 
+Node index 19	: datasize :59	 : Split feature: 0	 threashold: -0.14786948398701344	 leftNode: 21	 rightNode: 22
+Node index 20	: datasize :52	 : Split feature: 0	 threashold: -0.10447499474874128	 leftNode: 27	 rightNode: 28
+Node index 21	: datasize :29	 : Split feature: 1	 threashold: -0.6770251951757202	 leftNode: 23	 rightNode: 24
+Node index 22	: datasize :30	 : Split feature: 1	 threashold: -0.6387376995066703	 leftNode: 25	 rightNode: 26
+Node index 23	: datasize :19	 : No Split 
+Node index 24	: datasize :10	 : No Split 
+Node index 25	: datasize :19	 : No Split 
+Node index 26	: datasize :11	 : No Split 
+Node index 27	: datasize :31	 : Split feature: 1	 threashold: -0.09661243357568572	 leftNode: 29	 rightNode: 30
+Node index 28	: datasize :21	 : No Split 
+Node index 29	: datasize :21	 : No Split 
+Node index 30	: datasize :10	 : No Split 
+Node index 31	: datasize :52	 : Split feature: 1	 threashold: -0.30709575390643706	 leftNode: 33	 rightNode: 34
+Node index 32	: datasize :43	 : Split feature: 1	 threashold: -0.5505259430963085	 leftNode: 39	 rightNode: 40
+Node index 33	: datasize :35	 : Split feature: 1	 threashold: -0.794691582288908	 leftNode: 35	 rightNode: 36
+Node index 34	: datasize :17	 : No Split 
+Node index 35	: datasize :7	 : No Split 
+Node index 36	: datasize :28	 : Split feature: 1	 threashold: -0.6049498738394419	 leftNode: 37	 rightNode: 38
+Node index 37	: datasize :10	 : No Split 
+Node index 38	: datasize :18	 : No Split 
+Node index 39	: datasize :17	 : No Split 
+Node index 40	: datasize :26	 : Split feature: 0	 threashold: 1.7619467851974966	 leftNode: 41	 rightNode: 42
+Node index 41	: datasize :18	 : No Split 
+Node index 42	: datasize :8	 : No Split 
+Node index 43	: datasize :202	 : Split feature: 1	 threashold: 0.921464023675536	 leftNode: 45	 rightNode: 46
+Node index 44	: datasize :125	 : Split feature: 1	 threashold: 1.2689618020878117	 leftNode: 73	 rightNode: 74
+Node index 45	: datasize :112	 : Split feature: 0	 threashold: -0.7152038937071922	 leftNode: 47	 rightNode: 48
+Node index 46	: datasize :90	 : Split feature: 0	 threashold: -1.3433083139115132	 leftNode: 61	 rightNode: 62
+Node index 47	: datasize :36	 : Split feature: 1	 threashold: 0.6913089303920651	 leftNode: 49	 rightNode: 50
+Node index 48	: datasize :76	 : Split feature: 1	 threashold: 0.4509214277201068	 leftNode: 53	 rightNode: 54
+Node index 49	: datasize :27	 : Split feature: 1	 threashold: 0.269897242562921	 leftNode: 51	 rightNode: 52
+Node index 50	: datasize :9	 : No Split 
+Node index 51	: datasize :9	 : No Split 
+Node index 52	: datasize :18	 : No Split 
+Node index 53	: datasize :35	 : Split feature: 0	 threashold: -0.17458994752176535	 leftNode: 55	 rightNode: 56
+Node index 54	: datasize :41	 : Split feature: 0	 threashold: 0.23340881647377792	 leftNode: 57	 rightNode: 58
+Node index 55	: datasize :16	 : No Split 
+Node index 56	: datasize :19	 : No Split 
+Node index 57	: datasize :36	 : Split feature: 0	 threashold: -0.38772536148542036	 leftNode: 59	 rightNode: 60
+Node index 58	: datasize :5	 : No Split 
+Node index 59	: datasize :12	 : No Split 
+Node index 60	: datasize :24	 : No Split 
+Node index 61	: datasize :17	 : No Split 
+Node index 62	: datasize :73	 : Split feature: 1	 threashold: 1.3449218041505508	 leftNode: 63	 rightNode: 64
+Node index 63	: datasize :36	 : Split feature: 0	 threashold: -0.5759709406766405	 leftNode: 65	 rightNode: 66
+Node index 64	: datasize :37	 : Split feature: 1	 threashold: 2.0793534627105896	 leftNode: 69	 rightNode: 70
+Node index 65	: datasize :10	 : No Split 
+Node index 66	: datasize :26	 : Split feature: 0	 threashold: 0.08187484693970253	 leftNode: 67	 rightNode: 68
+Node index 67	: datasize :22	 : No Split 
+Node index 68	: datasize :4	 : No Split 
+Node index 69	: datasize :31	 : Split feature: 0	 threashold: -0.6997712354080166	 leftNode: 71	 rightNode: 72
+Node index 70	: datasize :6	 : No Split 
+Node index 71	: datasize :15	 : No Split 
+Node index 72	: datasize :16	 : No Split 
+Node index 73	: datasize :91	 : Split feature: 1	 threashold: 0.6705221280482866	 leftNode: 75	 rightNode: 76
+Node index 74	: datasize :34	 : Split feature: 1	 threashold: 2.3493315814592597	 leftNode: 83	 rightNode: 84
+Node index 75	: datasize :50	 : Split feature: 0	 threashold: 1.2570409834578982	 leftNode: 77	 rightNode: 78
+Node index 76	: datasize :41	 : Split feature: 0	 threashold: 0.8421657021940043	 leftNode: 81	 rightNode: 82
+Node index 77	: datasize :33	 : Split feature: 1	 threashold: 0.35243543501459806	 leftNode: 79	 rightNode: 80
+Node index 78	: datasize :17	 : No Split 
+Node index 79	: datasize :17	 : No Split 
+Node index 80	: datasize :16	 : No Split 
+Node index 81	: datasize :19	 : No Split 
+Node index 82	: datasize :22	 : No Split 
+Node index 83	: datasize :27	 : Split feature: 0	 threashold: 1.1920561923530988	 leftNode: 85	 rightNode: 86
+Node index 84	: datasize :7	 : No Split 
+Node index 85	: datasize :21	 : No Split 
+Node index 86	: datasize :6	 : No Split 
+*************************************************************************
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_simpleRegressionTree</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>*************************************************************************
+Have a tree with nodes .... lets take a look at each node .... 
+Node index 0	: datasize :1000	 : Split feature: 1	 threashold: 0.06818062438386235	 leftNode: 1	 rightNode: 2
+Node index 1	: datasize :510	 : Split feature: 1	 threashold: -0.9673561689034289	 leftNode: 3	 rightNode: 4
+Node index 2	: datasize :490	 : Split feature: 1	 threashold: 1.1390155477595076	 leftNode: 63	 rightNode: 64
+Node index 3	: datasize :147	 : Split feature: 0	 threashold: -0.3833598392538634	 leftNode: 5	 rightNode: 6
+Node index 4	: datasize :363	 : Split feature: 0	 threashold: -0.14503236613988163	 leftNode: 23	 rightNode: 24
+Node index 5	: datasize :60	 : Split feature: 1	 threashold: -1.598268406375445	 leftNode: 7	 rightNode: 8
+Node index 6	: datasize :87	 : Split feature: 1	 threashold: -1.5549436804257544	 leftNode: 13	 rightNode: 14
+Node index 7	: datasize :24	 : No Split 
+Node index 8	: datasize :36	 : Split feature: 0	 threashold: -1.5788897667878614	 leftNode: 9	 rightNode: 10
+Node index 9	: datasize :7	 : No Split 
+Node index 10	: datasize :29	 : Split feature: 1	 threashold: -1.3720819811737677	 leftNode: 11	 rightNode: 12
+Node index 11	: datasize :10	 : No Split 
+Node index 12	: datasize :19	 : No Split 
+Node index 13	: datasize :29	 : Split feature: 1	 threashold: -2.362293249013706	 leftNode: 15	 rightNode: 16
+Node index 14	: datasize :58	 : Split feature: 0	 threashold: 0.569534622275808	 leftNode: 17	 rightNode: 18
+Node index 15	: datasize :5	 : No Split 
+Node index 16	: datasize :24	 : No Split 
+Node index 17	: datasize :32	 : Split feature: 0	 threashold: -0.004615635104087097	 leftNode: 19	 rightNode: 20
+Node index 18	: datasize :26	 : Split feature: 0	 threashold: 1.58704272532991	 leftNode: 21	 rightNode: 22
+Node index 19	: datasize :15	 : No Split 
+Node index 20	: datasize :17	 : No Split 
+Node index 21	: datasize :22	 : No Split 
+Node index 22	: datasize :4	 : No Split 
+Node index 23	: datasize :148	 : Split feature: 0	 threashold: -1.2111375483318585	 leftNode: 25	 rightNode: 26
+Node index 24	: datasize :215	 : Split feature: 0	 threashold: 1.0074846131960342	 leftNode: 39	 rightNode: 40
+Node index 25	: datasize :45	 : Split feature: 1	 threashold: -0.3191814614628834	 leftNode: 27	 rightNode: 28
+Node index 26	: datasize :103	 : Split feature: 1	 threashold: -0.45382965774950446	 leftNode: 29	 rightNode: 30
+Node index 27	: datasize :25	 : No Split 
+Node index 28	: datasize :20	 : No Split 
+Node index 29	: datasize :53	 : Split feature: 0	 threashold: -0.45710890407539884	 leftNode: 31	 rightNode: 32
+Node index 30	: datasize :50	 : Split feature: 0	 threashold: -0.7183753109743871	 leftNode: 35	 rightNode: 36
+Node index 31	: datasize :28	 : Split feature: 1	 threashold: -0.5046346951225584	 leftNode: 33	 rightNode: 34
+Node index 32	: datasize :25	 : No Split 
+Node index 33	: datasize :23	 : No Split 
+Node index 34	: datasize :5	 : No Split 
+Node index 35	: datasize :19	 : No Split 
+Node index 36	: datasize :31	 : Split feature: 1	 threashold: -0.19144880474273213	 leftNode: 37	 rightNode: 38
+Node index 37	: datasize :13	 : No Split 
+Node index 38	: datasize :18	 : No Split 
+Node index 39	: datasize :146	 : Split feature: 1	 threashold: -0.308675282314877	 leftNode: 41	 rightNode: 42
+Node index 40	: datasize :69	 : Split feature: 0	 threashold: 1.8654555974787534	 leftNode: 57	 rightNode: 58
+Node index 41	: datasize :97	 : Split feature: 1	 threashold: -0.6924378697100619	 leftNode: 43	 rightNode: 44
+Node index 42	: datasize :49	 : Split feature: 0	 threashold: 0.5163841164795996	 leftNode: 53	 rightNode: 54
+Node index 43	: datasize :35	 : Split feature: 0	 threashold: 0.5025418773581534	 leftNode: 45	 rightNode: 46
+Node index 44	: datasize :62	 : Split feature: 0	 threashold: 0.19845529238667087	 leftNode: 47	 rightNode: 48
+Node index 45	: datasize :22	 : No Split 
+Node index 46	: datasize :13	 : No Split 
+Node index 47	: datasize :17	 : No Split 
+Node index 48	: datasize :45	 : Split feature: 1	 threashold: -0.5521750721343213	 leftNode: 49	 rightNode: 50
+Node index 49	: datasize :15	 : No Split 
+Node index 50	: datasize :30	 : Split feature: 0	 threashold: 0.5857532030562582	 leftNode: 51	 rightNode: 52
+Node index 51	: datasize :17	 : No Split 
+Node index 52	: datasize :13	 : No Split 
+Node index 53	: datasize :30	 : Split feature: 0	 threashold: 0.11701838508696304	 leftNode: 55	 rightNode: 56
+Node index 54	: datasize :19	 : No Split 
+Node index 55	: datasize :15	 : No Split 
+Node index 56	: datasize :15	 : No Split 
+Node index 57	: datasize :54	 : Split feature: 1	 threashold: -0.2196018577576389	 leftNode: 59	 rightNode: 60
+Node index 58	: datasize :15	 : No Split 
+Node index 59	: datasize :37	 : Split feature: 1	 threashold: -0.662846910098073	 leftNode: 61	 rightNode: 62
+Node index 60	: datasize :17	 : No Split 
+Node index 61	: datasize :14	 : No Split 
+Node index 62	: datasize :23	 : No Split 
+Node index 63	: datasize :335	 : Split feature: 0	 threashold: 0.2861472574108128	 leftNode: 65	 rightNode: 66
+Node index 64	: datasize :155	 : Split feature: 0	 threashold: -0.04275979487903088	 leftNode: 105	 rightNode: 106
+Node index 65	: datasize :207	 : Split feature: 0	 threashold: -0.7152038937071922	 leftNode: 67	 rightNode: 68
+Node index 66	: datasize :128	 : Split feature: 0	 threashold: 1.2490359744302362	 leftNode: 93	 rightNode: 94
+Node index 67	: datasize :72	 : Split feature: 1	 threashold: 0.6811011664648382	 leftNode: 69	 rightNode: 70
+Node index 68	: datasize :135	 : Split feature: 1	 threashold: 0.7416583967809895	 leftNode: 79	 rightNode: 80
+Node index 69	: datasize :43	 : Split feature: 0	 threashold: -2.6517903345120417	 leftNode: 71	 rightNode: 72
+Node index 70	: datasize :29	 : Split feature: 0	 threashold: -1.288704314651818	 leftNode: 77	 rightNode: 78
+Node index 71	: datasize :1	 : No Split 
+Node index 72	: datasize :42	 : Split feature: 0	 threashold: -1.4727344991480755	 leftNode: 73	 rightNode: 74
+Node index 73	: datasize :12	 : No Split 
+Node index 74	: datasize :30	 : Split feature: 1	 threashold: 0.4194169138697065	 leftNode: 75	 rightNode: 76
+Node index 75	: datasize :20	 : No Split 
+Node index 76	: datasize :10	 : No Split 
+Node index 77	: datasize :13	 : No Split 
+Node index 78	: datasize :16	 : No Split 
+Node index 79	: datasize :92	 : Split feature: 1	 threashold: 0.28804084750691133	 leftNode: 81	 rightNode: 82
+Node index 80	: datasize :43	 : Split feature: 0	 threashold: -0.2826887387694018	 leftNode: 89	 rightNode: 90
+Node index 81	: datasize :32	 : Split feature: 0	 threashold: -0.2276589022409678	 leftNode: 83	 rightNode: 84
+Node index 82	: datasize :60	 : Split feature: 0	 threashold: -0.09054704223081204	 leftNode: 85	 rightNode: 86
+Node index 83	: datasize :13	 : No Split 
+Node index 84	: datasize :19	 : No Split 
+Node index 85	: datasize :37	 : Split feature: 1	 threashold: 0.5390948978798576	 leftNode: 87	 rightNode: 88
+Node index 86	: datasize :23	 : No Split 
+Node index 87	: datasize :16	 : No Split 
+Node index 88	: datasize :21	 : No Split 
+Node index 89	: datasize :17	 : No Split 
+Node index 90	: datasize :26	 : Split feature: 1	 threashold: 0.9868645482173509	 leftNode: 91	 rightNode: 92
+Node index 91	: datasize :13	 : No Split 
+Node index 92	: datasize :13	 : No Split 
+Node index 93	: datasize :89	 : Split feature: 1	 threashold: 0.6705221280482866	 leftNode: 95	 rightNode: 96
+Node index 94	: datasize :39	 : Split feature: 1	 threashold: 0.5547696898605128	 leftNode: 103	 rightNode: 104
+Node index 95	: datasize :54	 : Split feature: 1	 threashold: 0.31052255035109366	 leftNode: 97	 rightNode: 98
+Node index 96	: datasize :35	 : Split feature: 0	 threashold: 0.7156367240830704	 leftNode: 101	 rightNode: 102
+Node index 97	: datasize :21	 : No Split 
+Node index 98	: datasize :33	 : Split feature: 0	 threashold: 0.895941239697736	 leftNode: 99	 rightNode: 100
+Node index 99	: datasize :25	 : No Split 
+Node index 100	: datasize :8	 : No Split 
+Node index 101	: datasize :20	 : No Split 
+Node index 102	: datasize :15	 : No Split 
+Node index 103	: datasize :21	 : No Split 
+Node index 104	: datasize :18	 : No Split 
+Node index 105	: datasize :80	 : Split feature: 0	 threashold: -1.3433083139115132	 leftNode: 107	 rightNode: 108
+Node index 106	: datasize :75	 : Split feature: 1	 threashold: 1.8935547790601026	 leftNode: 115	 rightNode: 116
+Node index 107	: datasize :17	 : No Split 
+Node index 108	: datasize :63	 : Split feature: 1	 threashold: 1.8263573052944562	 leftNode: 109	 rightNode: 110
+Node index 109	: datasize :45	 : Split feature: 1	 threashold: 1.3651862344195975	 leftNode: 111	 rightNode: 112
+Node index 110	: datasize :18	 : No Split 
+Node index 111	: datasize :19	 : No Split 
+Node index 112	: datasize :26	 : Split feature: 0	 threashold: -0.5193214765219774	 leftNode: 113	 rightNode: 114
+Node index 113	: datasize :13	 : No Split 
+Node index 114	: datasize :13	 : No Split 
+Node index 115	: datasize :54	 : Split feature: 0	 threashold: 0.4551841347954052	 leftNode: 117	 rightNode: 118
+Node index 116	: datasize :21	 : No Split 
+Node index 117	: datasize :13	 : No Split 
+Node index 118	: datasize :41	 : Split feature: 0	 threashold: 1.419496165337423	 leftNode: 119	 rightNode: 120
+Node index 119	: datasize :36	 : Split feature: 1	 threashold: 1.3924084185492995	 leftNode: 121	 rightNode: 122
+Node index 120	: datasize :5	 : No Split 
+Node index 121	: datasize :16	 : No Split 
+Node index 122	: datasize :20	 : No Split 
+*************************************************************************
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 2, Pass: 2 -- Duration: 853 ms
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>testClassificationTrees.TestClassificationTrees</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_performanceClassificationTree</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>*************************************************************************
+Have a tree with nodes .... lets take a look at each node .... 
+Node index 0	: datasize :670	 : Split feature: 1	 threashold: 3.95031823909126	 leftNode: 1	 rightNode: 2
+Node index 1	: datasize :443	 : Split feature: 0	 threashold: -4.683209865165898	 leftNode: 3	 rightNode: 4
+Node index 2	: datasize :227	 : No Split 
+Node index 3	: datasize :217	 : No Split 
+Node index 4	: datasize :226	 : No Split 
+*************************************************************************
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_simpleClassificsatoinTree</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>*************************************************************************
+Have a tree with nodes .... lets take a look at each node .... 
+Node index 0	: datasize :100	 : Split feature: 0	 threashold: -4.756965649595235	 leftNode: 1	 rightNode: 2
+Node index 1	: datasize :33	 : No Split 
+Node index 2	: datasize :67	 : Split feature: 1	 threashold: 4.030097211355455	 leftNode: 3	 rightNode: 4
+Node index 3	: datasize :34	 : No Split 
+Node index 4	: datasize :33	 : No Split 
+*************************************************************************
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 2, Pass: 2 -- Duration: 211 ms
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>testBoostrapper.TestBoostrapper</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_simpleBoostrap</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_weightedBoostrap</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 2, Pass: 2 -- Duration: 0 ms
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>testBagger.TestBagger</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_performanceClassificationBagger</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_performanceRegressionBagger</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>
+Training Results : 
+MSE: 228.55917134749154
+R2: 0.9584908233323536
+
+Test Results : 
+MSE: 407.530585018917
+R2: 0.9205705061600413
+feature imp: [0.09236352 0.90763648]
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_proximity_classificstion</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>prox matrix row 0 looks like this [0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 1. 0. 0. 0. 0. 0. 0. 0. 1. 1.]
+prox matrix row 1 looks like this [0.  0.  1.  1.  0.  1.  1.  1.  1.  0.  0.  1.  1.  0.8 1.  1.  1.  1.
+ 0.  0. ]
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_proximity_regression</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>prox matrix row 0 looks like this [0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.2 1.  0.  0.  0.
+ 0.  0. ]
+prox matrix row 1 looks like this [0.  0.  0.6 0.  0.  0.  0.  0.2 0.  0.  0.  0.  0.2 0.  0.  0.8 0.  0.
+ 0.  0. ]
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_simpleClassificationBagger</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>oobscore looks like this  (0.9983416252072969, <RHML.DTrees.ConfusionMatrix.RHMLConfusionMatrix object at 0x121f90be0>)
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_simpleRegressionBagger</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>Bagger score looks like this (0.9139770942132152, 473.5602561733637)
+Predictions look like this : [-46.31963510461064, -7.233053731766981, 59.63306647913377, -7.307826349774979, 59.63306647913377, 58.91953274140068, -24.72867190229316, -7.307826349774979, 98.5839563356795, -7.307826349774979, -7.307826349774979, -7.307826349774979, 23.198936216601023, 33.35332846768233, 38.43511793093465, -60.21462630463092, 72.36529059715672, -63.684600564395886, -63.684600564395886, 109.78766695443251, 59.63306647913377, -86.86991583571299, -10.800934714025985, 11.110269510553668, -46.31963510461064, -63.684600564395886, -106.02556916171675, -46.31963510461064, 5.671612964210882, -69.57229712204979, -46.31963510461064, -7.233053731766981, -10.800934714025985, -115.35581408832411, 72.36529059715672, -96.49271116239579, -23.057894060962944, 94.25589236410453, -47.05755689720759, 98.5839563356795, -24.72867190229316, 34.59548546271183, 5.671612964210882, 84.85049096827363, -7.233053731766981, -69.07915882624633, 59.63306647913377, -74.45072624139844, 29.802518264951097, 84.70876563032468, 59.63306647913377, 88.62277815119968, 39.97348323841518, -47.37960988365302, -55.85384412275439, 56.50269723139165, 75.96490210899057, -7.233053731766981, 66.6061404535952, -7.307826349774979, -31.51425966812217, -69.07915882624633, 71.76621300855672, 32.791388112337174, 5.671612964210882, 88.62277815119968, -63.684600564395886, 16.89785156897323, 18.94588450634594, 58.91953274140068, 88.62277815119968, -24.72867190229316, -32.39189791634346, 18.94588450634594, -38.31457565589798, 25.962885796728266, -86.86991583571299, 4.652704379502429, -50.650736795737565, 23.198936216601023, -39.13097742355053, 18.94588450634594, 18.94588450634594, 25.43508330437972, -74.45072624139844, 18.94588450634594, -32.39189791634346, 135.67126998681027, -16.254437663191794, -47.05755689720759, -46.31963510461064, 32.791388112337174, 5.671612964210882, -113.99887314863888, -63.684600564395886, -46.31963510461064, 13.405203622376249, -7.233053731766981, -115.45972805949539, 126.12367172710401, 88.62277815119968, 52.275944513480525, 18.94588450634594, 18.94588450634594, 98.5839563356795, 52.18190273232172, 59.63306647913377, -96.5639843731266, -85.07334144901785, -74.45072624139844, 25.962885796728266, -113.85632560335826, 4.652704379502429, 58.91953274140068, -47.37960988365302, -47.05755689720759, 38.08043203531888, 46.78210935888554, 18.94588450634594, 39.20108204305866, -7.233053731766981, -55.85384412275439, 88.81016800751749, 135.67126998681027, 25.43508330437972, -85.02158947809298, -7.307826349774979, -7.233053731766981, 59.154976706783145, -39.13097742355053, 18.94588450634594, 143.69390105278995, -1.7795507826011723, 38.43511793093465, 135.67126998681027, -47.37960988365302, 109.78766695443251, 45.3906033052217, 72.36529059715672, -115.45972805949539, -69.57229712204979, 11.110269510553668, -63.684600564395886, -153.94085268988132, 18.94588450634594, 18.94588450634594, 87.16796916890759, 25.43508330437972, -46.31963510461064, 5.671612964210882, -17.58652247985499, -7.307826349774979, 88.81016800751749, 111.01498658771345, 79.08699182582825, 18.94588450634594, 18.94588450634594, -7.233053731766981, -86.86991583571299, -7.233053731766981, -7.233053731766981, -5.9017810902234755, -32.39189791634346, -78.25016681089107, 18.94588450634594, -24.72867190229316, -7.307826349774979, -46.31963510461064, -23.057894060962944, 29.802518264951097, 79.33836457161814, 135.67126998681027, 11.110269510553668, 49.64795325498013, 84.70876563032468, -131.93563591958883, 58.91953274140068, -153.94085268988132, -95.25474194081937, 75.96490210899057, -17.58652247985499, -24.72867190229316, 84.85049096827363, 52.18190273232172, 39.97348323841518, -84.0946249306262, -32.39189791634346, -115.45972805949539, 58.91953274140068, -17.58652247985499, -69.07915882624633, 46.78210935888554, 59.63306647913377, 169.47334518097153, 11.110269510553668, -17.58652247985499, -46.31963510461064, -131.93563591958883, -86.16406158141884, -7.307826349774979, 18.94588450634594, 38.43511793093465, -79.41414462572422, 52.18190273232172, -47.37960988365302, -7.307826349774979, 38.08043203531888, 169.47334518097153, -25.203240235283353, -47.05755689720759, -32.39189791634346, -7.307826349774979, 13.405203622376249, 79.21737675536879, -7.233053731766981, -60.95254809722786, 68.64012061390679, -46.31963510461064, -63.684600564395886, -46.31963510461064, -46.31963510461064, 56.50269723139165, 4.70495521222877, 94.25589236410453, 18.94588450634594, -69.57229712204979, 18.94588450634594, -46.31963510461064, -23.057894060962944, -105.99814327090523, 36.4128766353963, -46.31963510461064, -1.7795507826011723, 39.97348323841518, -5.9017810902234755, 18.94588450634594, -25.203240235283353, 18.94588450634594, -24.72867190229316, -113.85632560335826, 66.94956844331311, 79.08699182582825, -56.06177998037557, -10.800934714025985, 29.802518264951097, 94.25589236410453, 45.3906033052217, 72.36529059715672, 35.23057514589063, 59.63306647913377, 18.94588450634594, -60.95254809722786, -24.72867190229316, -7.307826349774979, -98.59044839926777, 102.35198007876038, 28.611459770443286, 39.97348323841518, 46.78210935888554, 59.63306647913377, 18.94588450634594, 32.791388112337174, 5.671612964210882, 13.405203622376249, -46.31963510461064, -74.45072624139844, 66.94956844331311, -23.057894060962944, 44.25607504537973, -46.31963510461064, 25.43508330437972, -46.31963510461064, 52.18190273232172, 39.97348323841518, 34.59548546271183, 25.43508330437972, 25.962885796728266, 25.43508330437972, 8.591615669382813, 28.611459770443286, -7.307826349774979, -107.02818503402887, -46.31963510461064, 68.64012061390679, -7.233053731766981, -153.94085268988132, -24.72867190229316, -46.31963510461064, -7.307826349774979, 88.62277815119968, 18.94588450634594, -86.86991583571299, -63.684600564395886, 94.25589236410453, -124.81739887691427, 135.67126998681027, -7.307826349774979, 98.5839563356795, 65.26618069203862, -7.307826349774979, 67.94503264088978, -7.307826349774979, 18.94588450634594, 25.43508330437972, 79.08699182582825, -46.31963510461064, 68.64012061390679, 8.591615669382813, -85.07334144901785, -17.58652247985499, -32.39189791634346, -7.233053731766981, -63.684600564395886, -70.79439560090229, 109.78766695443251, -86.86991583571299, -143.70907901279833, 5.671612964210882, 18.94588450634594, -7.233053731766981, 4.652704379502429, 94.25589236410453, 18.94588450634594, 109.78766695443251, 39.97348323841518, -46.31963510461064, -46.31963510461064, -95.25474194081937, 87.16796916890759, 109.78766695443251]
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 6, Pass: 6 -- Duration: 4.74 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>testBooster.TestBooster</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_adaBooster</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>*************************************************************************
+Have a tree with nodes .... lets take a look at each node .... 
+Node index 0	: datasize :670	 : Split feature: 5	 threashold: -0.5531879786823344	 leftNode: 1	 rightNode: 2
+Node index 1	: datasize :284	 : Split feature: 6	 threashold: -2.477307170667168	 leftNode: 3	 rightNode: 4
+Node index 2	: datasize :386	 : Split feature: 6	 threashold: -3.597833345961835	 leftNode: 5	 rightNode: 6
+Node index 3	: datasize :109	 : No Split 
+Node index 4	: datasize :175	 : No Split 
+Node index 5	: datasize :127	 : No Split 
+Node index 6	: datasize :259	 : No Split 
+*************************************************************************
+*************************************************************************
+Have a tree with nodes .... lets take a look at each node .... 
+Node index 0	: datasize :670	 : Split feature: 19	 threashold: 1.2296537804974166	 leftNode: 1	 rightNode: 2
+Node index 1	: datasize :372	 : Split feature: 0	 threashold: -0.5838442863770734	 leftNode: 3	 rightNode: 4
+Node index 2	: datasize :298	 : Split feature: 17	 threashold: 2.354771551008751	 leftNode: 5	 rightNode: 6
+Node index 3	: datasize :163	 : No Split 
+Node index 4	: datasize :209	 : No Split 
+Node index 5	: datasize :262	 : No Split 
+Node index 6	: datasize :36	 : No Split 
+*************************************************************************
+*************************************************************************
+Have a tree with nodes .... lets take a look at each node .... 
+Node index 0	: datasize :670	 : Split feature: 12	 threashold: -0.01677425522357484	 leftNode: 1	 rightNode: 2
+Node index 1	: datasize :429	 : Split feature: 5	 threashold: 2.8531557476797964	 leftNode: 3	 rightNode: 4
+Node index 2	: datasize :241	 : Split feature: 11	 threashold: 0.24947154787323267	 leftNode: 5	 rightNode: 6
+Node index 3	: datasize :371	 : No Split 
+Node index 4	: datasize :58	 : No Split 
+Node index 5	: datasize :152	 : No Split 
+Node index 6	: datasize :89	 : No Split 
+*************************************************************************
+*************************************************************************
+Have a tree with nodes .... lets take a look at each node .... 
+Node index 0	: datasize :670	 : Split feature: 5	 threashold: -1.5350020915152283	 leftNode: 1	 rightNode: 2
+Node index 1	: datasize :141	 : Split feature: 19	 threashold: 0.5899373047890473	 leftNode: 3	 rightNode: 4
+Node index 2	: datasize :529	 : Split feature: 18	 threashold: -0.8811313044943542	 leftNode: 5	 rightNode: 6
+Node index 3	: datasize :71	 : No Split 
+Node index 4	: datasize :70	 : No Split 
+Node index 5	: datasize :186	 : No Split 
+Node index 6	: datasize :343	 : No Split 
+*************************************************************************
+*************************************************************************
+Have a tree with nodes .... lets take a look at each node .... 
+Node index 0	: datasize :670	 : Split feature: 8	 threashold: 0.7319292390716541	 leftNode: 1	 rightNode: 2
+Node index 1	: datasize :350	 : Split feature: 19	 threashold: 3.277439603980346	 leftNode: 3	 rightNode: 4
+Node index 2	: datasize :320	 : Split feature: 9	 threashold: 1.8988674675746253	 leftNode: 5	 rightNode: 6
+Node index 3	: datasize :300	 : No Split 
+Node index 4	: datasize :50	 : No Split 
+Node index 5	: datasize :265	 : No Split 
+Node index 6	: datasize :55	 : No Split 
+*************************************************************************
+*************************************************************************
+Have a tree with nodes .... lets take a look at each node .... 
+Node index 0	: datasize :670	 : Split feature: 9	 threashold: -3.4149606699191595	 leftNode: 1	 rightNode: 2
+Node index 1	: datasize :59	 : Split feature: 1	 threashold: 3.582135313374208	 leftNode: 3	 rightNode: 4
+Node index 2	: datasize :611	 : Split feature: 14	 threashold: -2.0761415859944297	 leftNode: 5	 rightNode: 6
+Node index 3	: datasize :53	 : No Split 
+Node index 4	: datasize :6	 : No Split 
+Node index 5	: datasize :260	 : No Split 
+Node index 6	: datasize :351	 : No Split 
+*************************************************************************
+*************************************************************************
+Have a tree with nodes .... lets take a look at each node .... 
+Node index 0	: datasize :670	 : Split feature: 18	 threashold: -0.9012295837062909	 leftNode: 1	 rightNode: 2
+Node index 1	: datasize :235	 : Split feature: 5	 threashold: -0.956993380850578	 leftNode: 3	 rightNode: 4
+Node index 2	: datasize :435	 : Split feature: 6	 threashold: -4.767536512337191	 leftNode: 5	 rightNode: 6
+Node index 3	: datasize :56	 : No Split 
+Node index 4	: datasize :179	 : No Split 
+Node index 5	: datasize :91	 : No Split 
+Node index 6	: datasize :344	 : No Split 
+*************************************************************************
+*************************************************************************
+Have a tree with nodes .... lets take a look at each node .... 
+Node index 0	: datasize :670	 : Split feature: 19	 threashold: -1.2700889097621935	 leftNode: 1	 rightNode: 2
+Node index 1	: datasize :119	 : Split feature: 13	 threashold: 3.413658553583633	 leftNode: 3	 rightNode: 4
+Node index 2	: datasize :551	 : Split feature: 1	 threashold: -0.9169245558069941	 leftNode: 5	 rightNode: 6
+Node index 3	: datasize :99	 : No Split 
+Node index 4	: datasize :20	 : No Split 
+Node index 5	: datasize :170	 : No Split 
+Node index 6	: datasize :381	 : No Split 
+*************************************************************************
+*************************************************************************
+Have a tree with nodes .... lets take a look at each node .... 
+Node index 0	: datasize :670	 : Split feature: 7	 threashold: -1.3627366331233257	 leftNode: 1	 rightNode: 2
+Node index 1	: datasize :282	 : Split feature: 17	 threashold: 1.3875837524309902	 leftNode: 3	 rightNode: 4
+Node index 2	: datasize :388	 : Split feature: 0	 threashold: -0.7695989623985018	 leftNode: 5	 rightNode: 6
+Node index 3	: datasize :242	 : No Split 
+Node index 4	: datasize :40	 : No Split 
+Node index 5	: datasize :179	 : No Split 
+Node index 6	: datasize :209	 : No Split 
+*************************************************************************
+*************************************************************************
+Have a tree with nodes .... lets take a look at each node .... 
+Node index 0	: datasize :670	 : Split feature: 5	 threashold: 2.4422380206311196	 leftNode: 1	 rightNode: 2
+Node index 1	: datasize :598	 : Split feature: 19	 threashold: 1.5502728396416485	 leftNode: 3	 rightNode: 4
+Node index 2	: datasize :72	 : Split feature: 1	 threashold: -2.2572694411564247	 leftNode: 5	 rightNode: 6
+Node index 3	: datasize :373	 : No Split 
+Node index 4	: datasize :225	 : No Split 
+Node index 5	: datasize :14	 : No Split 
+Node index 6	: datasize :58	 : No Split 
+*************************************************************************
+*************************************************************************
+Have a tree with nodes .... lets take a look at each node .... 
+Node index 0	: datasize :670	 : Split feature: 16	 threashold: 2.5894625029998184	 leftNode: 1	 rightNode: 2
+Node index 1	: datasize :430	 : Split feature: 12	 threashold: -3.0492783327683455	 leftNode: 3	 rightNode: 4
+Node index 2	: datasize :240	 : Split feature: 12	 threashold: 1.6278767317051779	 leftNode: 5	 rightNode: 6
+Node index 3	: datasize :60	 : No Split 
+Node index 4	: datasize :370	 : No Split 
+Node index 5	: datasize :187	 : No Split 
+Node index 6	: datasize :53	 : No Split 
+*************************************************************************
+*************************************************************************
+Have a tree with nodes .... lets take a look at each node .... 
+Node index 0	: datasize :670	 : Split feature: 16	 threashold: -6.187017552973372	 leftNode: 1	 rightNode: 2
+Node index 1	: datasize :40	 : Split feature: 7	 threashold: 0.701343471552579	 leftNode: 3	 rightNode: 4
+Node index 2	: datasize :630	 : Split feature: 8	 threashold: -2.473949863045381	 leftNode: 5	 rightNode: 6
+Node index 3	: datasize :33	 : No Split 
+Node index 4	: datasize :7	 : No Split 
+Node index 5	: datasize :40	 : No Split 
+Node index 6	: datasize :590	 : No Split 
+*************************************************************************
+*************************************************************************
+Have a tree with nodes .... lets take a look at each node .... 
+Node index 0	: datasize :670	 : Split feature: 5	 threashold: 1.2578094304747207	 leftNode: 1	 rightNode: 2
+Node index 1	: datasize :518	 : Split feature: 10	 threashold: 0.35419116807164325	 leftNode: 3	 rightNode: 4
+Node index 2	: datasize :152	 : Split feature: 10	 threashold: -1.3806889022818143	 leftNode: 5	 rightNode: 6
+Node index 3	: datasize :275	 : No Split 
+Node index 4	: datasize :243	 : No Split 
+Node index 5	: datasize :44	 : No Split 
+Node index 6	: datasize :108	 : No Split 
+*************************************************************************
+*************************************************************************
+Have a tree with nodes .... lets take a look at each node .... 
+Node index 0	: datasize :670	 : Split feature: 5	 threashold: 1.378012318563799	 leftNode: 1	 rightNode: 2
+Node index 1	: datasize :522	 : Split feature: 12	 threashold: 2.0279540828794413	 leftNode: 3	 rightNode: 4
+Node index 2	: datasize :148	 : Split feature: 12	 threashold: 2.6871393373064927	 leftNode: 5	 rightNode: 6
+Node index 3	: datasize :451	 : No Split 
+Node index 4	: datasize :71	 : No Split 
+Node index 5	: datasize :131	 : No Split 
+Node index 6	: datasize :17	 : No Split 
+*************************************************************************
+*************************************************************************
+Have a tree with nodes .... lets take a look at each node .... 
+Node index 0	: datasize :670	 : Split feature: 14	 threashold: 1.0336598612389125	 leftNode: 1	 rightNode: 2
+Node index 1	: datasize :459	 : Split feature: 13	 threashold: -0.6092436979630564	 leftNode: 3	 rightNode: 4
+Node index 2	: datasize :211	 : Split feature: 18	 threashold: 0.2360195225220028	 leftNode: 5	 rightNode: 6
+Node index 3	: datasize :166	 : No Split 
+Node index 4	: datasize :293	 : No Split 
+Node index 5	: datasize :152	 : No Split 
+Node index 6	: datasize :59	 : No Split 
+*************************************************************************
+my new prediciotns are : [0 1 0 0 0 0 0 1 1 0 1 0 1 1 1 0 1 1 0 1 1 0 0 0 0 1 1 1 0 0 0 0 0 1 0 0 0
+ 1 0 1 0 1 0 0 1 0 1 1 0 0 0 1 0 0 1 0 1 1 0 1 1 0 0 1 0 0 0 0 1 0 1 0 0 0
+ 0 1 1 0 1 1 0 0 0 0 0 1 0 1 0 0 0 1 0 0 1 1 1 1 0 1 0 1 0 1 0 0 0 0 0 0 1
+ 0 1 0 1 0 1 1 0 1 0 0 1 1 0 0 1 1 1 1 0 0 1 1 0 1 1 1 0 0 0 0 1 1 0 1 0 1
+ 1 0 1 0 0 1 1 1 1 1 0 1 0 1 0 1 0 1 0 1 0 1 0 0 0 0 0 1 1 0 1 0 0 0 1 0 0
+ 1 0 1 0 0 1 0 0 1 1 0 0 0 0 1 0 1 0 0 0 0 1 0 0 1 0 1 1 1 1 1 1 0 1 0 0 1
+ 0 1 0 1 1 0 1 0 0 0 0 1 0 0 1 0 0 1 0 0 1 1 1 1 1 0 1 1 0 0 0 0 1 1 0 0 1
+ 0 1 0 1 0 0 0 1 1 1 1 0 1 0 0 1 0 1 1 0 1 1 1 1 0 0 1 1 0 1 0 1 0 1 1 0 0
+ 0 0 1 1 0 1 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 1 0 1 1 1 1 1 0 1 1 1 0 0 0 1 1
+ 1 0 0 0 1 1 1 1 1 1 1 1 0 1 0 1 1 1 0 0 1 1 1 1 0 1 1 0 0 1 0 0 0 1 1 0 1
+ 1 0 1 0 0 1 0 1 1 1 0 0 0 0 1 1 1 1 0 1 0 0 0 0 1 1 1 1 0 1 0 0 0 0 0 1 0
+ 0 1 1 1 1 0 1 1 1 1 1 0 1 1 0 0 1 0 0 0 0 1 0 1 1 0 0 0 0 1 0 1 0 0 0 1 0
+ 1 1 1 0 0 0 1 0 0 0 0 0 0 0 0 1 1 0 1 1 0 1 1 1 0 1 1 0 1 1 1 0 0 1 0 1 0
+ 1 0 0 0 0 1 1 0 0 0 1 1 1 0 1 0 0 0 0 0 1 1 0 1 0 1 1 1 1 0 0 1 1 1 1 0 0
+ 0 0 1 0 0 1 1 0 1 0 1 1 0 0 1 0 0 0 0 0 0 1 1 0 0 0 1 1 0 0 1 1 1 0 1 1 1
+ 1 0 1 0 0 0 1 0 1 0 1 0 0 1 1 1 0 0 0 0 0 0 0 1 1 0 0 0 1 1 1 1 1 1 0 0 1
+ 1 1 1 0 0 0 0 0 0 0 0 1 1 0 1 0 1 0 1 1 0 0 1 1 1 1 0 1 1 0 1 0 1 1 1 1 1
+ 1 0 0 1 0 0 0 0 0 0 0 1 1 1 0 1 1 0 1 1 1 1 1 0 0 1 1 1 1 0 0 1 0 0 0 0 1
+ 1 1 0 1]
+And my actuals are [0 1 0 0 0 1 0 1 1 0 1 0 1 1 0 0 1 1 0 1 1 0 0 0 1 1 0 0 0 0 1 0 0 1 1 0 0
+ 1 0 1 0 1 1 0 1 0 1 1 0 0 0 1 0 0 1 0 1 1 0 1 1 0 1 0 0 0 0 0 1 0 1 0 0 0
+ 0 1 1 0 1 1 0 0 0 0 0 1 0 1 0 0 0 1 1 0 1 1 1 1 0 1 0 1 1 1 0 0 0 0 0 0 1
+ 0 1 0 1 0 0 0 0 1 1 0 0 0 0 0 0 1 1 1 0 0 1 1 0 1 1 1 0 0 0 0 1 1 0 1 1 1
+ 1 0 1 0 0 1 1 1 1 1 0 1 0 1 0 1 0 1 0 1 0 1 0 0 0 0 0 1 1 1 1 0 0 0 1 0 0
+ 1 0 1 0 0 1 0 0 1 1 0 0 1 0 1 0 1 0 0 0 0 1 0 0 1 0 1 1 1 1 1 1 0 0 0 0 1
+ 1 1 0 1 1 1 0 0 0 0 1 1 0 0 0 0 0 1 0 0 1 1 0 1 1 0 1 1 0 0 0 0 1 1 0 0 1
+ 0 1 0 0 0 0 0 1 1 1 1 0 1 0 0 1 0 1 1 0 1 1 1 1 1 0 1 1 0 1 0 1 0 1 1 1 0
+ 0 0 1 1 0 1 1 0 0 0 0 0 0 0 1 0 0 0 1 1 1 1 0 1 0 0 0 1 0 1 1 1 0 1 0 1 1
+ 1 0 1 0 1 1 1 1 1 1 0 1 0 1 0 1 1 1 1 0 0 1 1 1 0 0 1 0 0 1 0 0 0 1 1 0 1
+ 1 0 1 0 0 1 0 1 1 1 0 0 0 0 1 1 1 1 0 1 0 0 0 1 1 1 1 0 0 1 0 0 0 0 0 1 0
+ 0 1 1 1 1 0 1 1 1 1 0 0 1 1 0 0 1 0 0 0 0 1 0 1 1 1 0 0 0 1 0 1 0 0 0 1 1
+ 1 1 1 1 0 0 1 0 0 0 0 0 0 0 1 1 1 0 0 1 0 1 1 1 0 1 1 0 1 1 1 0 0 1 0 1 0
+ 1 0 0 0 0 1 1 0 0 0 1 1 1 0 1 0 0 0 0 0 1 1 0 1 0 1 1 1 0 0 0 1 1 0 1 0 0
+ 0 0 1 0 0 1 1 0 1 0 1 1 0 1 1 0 0 0 0 0 0 1 1 0 0 0 1 1 0 0 0 1 1 0 1 1 0
+ 1 0 1 0 0 0 1 0 1 0 1 0 0 1 1 1 0 0 0 0 0 1 0 1 0 1 0 0 1 1 1 1 1 1 0 0 1
+ 1 1 1 0 0 0 0 0 0 0 0 1 1 0 1 0 1 0 1 1 0 1 1 1 1 1 0 1 1 0 1 1 1 0 1 1 1
+ 0 1 0 0 0 0 0 0 0 1 0 1 1 1 0 1 1 0 1 1 1 1 1 0 0 1 1 0 1 0 0 1 0 0 0 0 1
+ 0 1 0 1]
+number correct = 600 out of 670, as a percent : 89.55223880597015
+Training data :
+Score: (0.8955223880597015, <RHML.DTrees.ConfusionMatrix.RHMLConfusionMatrix object at 0x121f900d0>)
+Test data :
+Score: (0.8, <RHML.DTrees.ConfusionMatrix.RHMLConfusionMatrix object at 0x121fb8160>)
+feature imp1 : [0.05169349 0.03828787 0.         0.         0.         0.21410776
+ 0.06050403 0.02734702 0.0396807  0.04094193 0.03508069 0.04011225
+ 0.10678532 0.03485852 0.03499186 0.         0.04740983 0.06456233
+ 0.06776141 0.095875  ]
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_gradientBooster</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>Training data :
+MSE: 3.2888038948508043
+R2: 0.9994027124744469
+Test data :
+MSE: 72.91115131703847
+R2: 0.985789297644661
+GradBooster: Feature importance : [0.11024861 0.88975139] 
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 2, Pass: 2 -- Duration: 35.62 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html

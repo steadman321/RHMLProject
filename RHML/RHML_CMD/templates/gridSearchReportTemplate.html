@@ -1,0 +1,43 @@
+<html>
+    <head>{STYLE}</head>       
+    <body>                           
+        <H2><b>{TITLE}</b></H2>  
+        <div class="report_desc">{DESC} </div>
+
+        <!-- Data Used -->
+        <H2>Data Used: </H2>
+        <div>
+            {DATADETAILS}
+            <div style="display:{SHOW_SKIPS}">
+                <b>Features Skipped : </b> {SKIPPED_FEATURE_DETAILS}
+            </div>
+        </div>
+
+        <!-- Settings -->
+        <H2>Settings: </H2>
+        <div>
+            {HYPERPARAMS}
+        </div>
+        </p>
+
+
+
+        <!-- Raw Results -->
+        <H2>Results: </H2>
+
+        <!-- Plotted Results -->
+        <div>
+            <img src="{GRIDRESULTS_PNG}">
+        </div>
+        </p>
+
+        <details>
+            <summary>Detailed Results:</summary>
+            <div>
+                {GRIDRESULTSTABLE}
+            </div>
+        </details>
+
+    </body>
+</html>
+

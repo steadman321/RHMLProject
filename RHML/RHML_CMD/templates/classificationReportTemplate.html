@@ -1,0 +1,145 @@
+<html>
+    <head>{STYLE}</head>       
+    <body>                           
+        <H2><b>{TITLE}</b></H2>  
+        <div class="report_desc">{DESC} </div>
+
+        <!-- Data Used -->
+        <H2>Data Used: </H2>
+        <div>
+            {DATADETAILS}
+            <div style="display:{SHOW_SKIPS}">
+                <b>Features Skipped : </b> {SKIPPED_FEATURE_DETAILS}
+            </div>
+        </div>
+
+        <!-- Settings -->
+        <H2>Settings: </H2>
+        <div>
+            {HYPERPARAMS}
+        </div>
+        </p>
+
+        <!-- Optional tree structure - may only make sense to Dtree, but may use this section for other things for other models -->
+        <div style="display:{SHOW_TREE_STRUCTURE}">
+            <H2>Tree Structure:</H2>   
+            <div class="treeStructureDiv" >{NODEINFO}</div>      
+        </div>  
+
+        </p>
+
+        
+    
+        <!-- Grid to show training next to test  (non OOB version)-->
+        <div style="display:{HIDE_FOR_OOB}">
+            <div class="results-grid-container">
+
+                <div class="grid-col1">
+                    <div>
+                        <H2>Training Results:</H2> 
+                        <H3>Accuracy:   {TRAIN_ACC}</H3> 
+                        <img src="{TRAININGACC_PNG}">
+                    </div>
+                    <div>
+                        <H3>Confusion Matrix:</H3> 
+                        <div class="conf_matrix">{TRAIN_CMATRIX}</div>     
+                    </div> 
+                </div>
+    
+                <div class="grid-col2">
+                    <div>
+                        <H2>Testing Results:</H2> 
+                        <H3>Accuracy:   {TEST_ACC}</H3>     
+                        <img src="{TESTINGACC_PNG}">
+                    </div>
+                    <div>
+                        <H3>Confusion Matrix:</H3> 
+                        <div class="conf_matrix">{TEST_CMATRIX}</div>      
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+
+        <!-- This is 3 grid for OOb version  -->
+        <div style="display:{SHOW_OOB}">
+            <!-- Grid to show training next to test  -->
+            <div class="results-grid-container-3">
+
+                <div class="grid-col1 results_col_border_right">
+                    <div>
+                        <H2>Training Results:</H2> 
+                        <H3>Accuracy:   {TRAIN_ACC}</H3> 
+                        <img src="{TRAININGACC_PNG}">
+                    </div>
+                    <div>
+                        <H3>Confusion Matrix:</H3> 
+                        <div class="conf_matrix">{TRAIN_CMATRIX}</div>     
+                    </div> 
+                </div>
+
+                <div class="grid-col2 results_col_border_right">
+                    <div>
+                        <H2>OOB Results:</H2> 
+                        <H3>Accuracy:   {OOB_ACC}</H3> 
+                        <img src="{OOBACC_PNG}">
+                    </div>
+                    <div>
+                        <H3>Confusion Matrix:</H3> 
+                        <div class="conf_matrix">{OOB_CMATRIX}</div>     
+                    </div> 
+
+                </div>
+
+                <div class="grid-col3">
+                    <div>
+                        <H2>Testing Results:</H2> 
+                        <H3>Accuracy:   {TEST_ACC}</H3>     
+                        <img src="{TESTINGACC_PNG}">
+                    </div>
+                    <div>
+                        <H3>Confusion Matrix:</H3> 
+                        <div class="conf_matrix">{TEST_CMATRIX}</div>      
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+        
+
+
+        <!-- Grid to show feature imp and feature list  -->
+        <div class="results-grid-container">
+
+            <div class="grid-col1">
+                <H2>Feature Importance:</H2>
+                <img src="{FEATUREIMP_PNG}">
+            </div>
+
+            <div class="grid-col2">
+                <div class="results-grid-container">
+                    <div>
+                        <H2>Feature List:</H2>
+                        <H3>(order by index)</H3>
+                        {FEATURELIST}
+                    </div>
+                    <div>
+                        <H2 class="textwhite">Feature List: </H2>
+                        <H3>(order by importance)</H3>
+                        {ORDEREDFEATURES}
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Proximity matrix -->
+        <div style="display:{SHOW_PROX}">
+            <H3>Proximity Matrix:</H3> 
+            <img src="{PROXIMITY_PNG}">
+        </div>
+        <p>
+
+    </body>                        
+</html>

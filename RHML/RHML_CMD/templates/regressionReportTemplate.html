@@ -1,0 +1,144 @@
+<html>
+    <head>{STYLE}</head>       
+    <body>                           
+        <H2><b>{TITLE}</b></H2>  
+        <div class="report_desc">{DESC} </div>
+
+        <!-- Data Used -->
+        <H2>Data Used: </H2>
+        <div>
+            {DATADETAILS}
+            <div style="display:{SHOW_SKIPS}">
+                <b>Features Skipped : </b> {SKIPPED_FEATURE_DETAILS}
+            </div>
+        </div>
+
+        <!-- Settings -->
+        <H2>Settings: </H2>
+        <div>
+            {HYPERPARAMS}
+        </div>
+        </p>
+
+        <!-- Optional tree structure - may only make sense to Dtree, but may use this section for other things for other models -->
+        <div style="display:{SHOW_TREE_STRUCTURE}">
+            <H2>Tree Structure:</H2>   
+            <div class="treeStructureDiv" >{NODEINFO}</div>      
+        </div>  
+
+        </p>
+
+    
+        <!-- 2 Grid to show training next to test  -->
+        <div style="display:{HIDE_FOR_OOB}">
+            <div class="results-grid-container">
+
+                <div class="grid-col1">
+                    <div>
+                        <H2>Training Results:</H2> 
+                        <table class="metricTable">
+                            <tr><td class="bold">MSE:</td><td>{TRAIN_MSE}</td></tr>
+                            <tr><td class="bold">RMSE:</td><td>{TRAIN_RMSE}</td></tr>
+                            <tr><td class="bold">R<sup>2</sup>:</td><td>{TRAIN_R2}</td></tr>
+                        </table>
+                        <img src="{TRAININGACC_PNG}">
+                    </div>
+
+                </div>
+
+                <div class="grid-col2">
+                    <div>
+                        <H2>Testing Results:</H2> 
+                        <table class="metricTable">
+                            <tr><td class="bold">MSE:</td><td>{TEST_MSE}</td></tr>
+                            <tr><td class="bold">RMSE:</td><td>{TEST_RMSE}</td></tr>
+                            <tr><td class="bold">R<sup>2</sup>:</td><td>{TEST_R2}</td></tr>
+                        </table>
+                        <img src="{TESTINGACC_PNG}">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- 3 Grid to show training next to test  -->
+        <div style="display:{SHOW_OOB}">
+            <div class="results-grid-container-3">
+
+                <div class="grid-col1 results_col_border_right">
+                    <div>
+                        <H2>Training Results:</H2> 
+                        <table class="metricTable">
+                            <tr><td class="bold">MSE:</td><td>{TRAIN_MSE}</td></tr>
+                            <tr><td class="bold">RMSE:</td><td>{TRAIN_RMSE}</td></tr>
+                            <tr><td class="bold">R<sup>2</sup>:</td><td>{TRAIN_R2}</td></tr>
+                        </table>
+                        <img src="{TRAININGACC_PNG}">
+                    </div>
+
+                </div>
+
+                <div class="grid-col2 results_col_border_right">
+                    <div>
+                        <H2>OOB Results:</H2> 
+                        <table class="metricTable">
+                            <tr><td class="bold">MSE:</td><td>{OOB_MSE}</td></tr>
+                            <tr><td class="bold">RMSE:</td><td>{OOB_RMSE}</td></tr>
+                            <tr><td class="bold">R<sup>2</sup>:</td><td>{OOB_ACC}</td></tr>
+                        </table>
+                        <img src="{OOBACC_PNG}">
+                    </div>
+                </div>
+
+                <div class="grid-col3">
+                    <div>
+                        <H2>Testing Results:</H2> 
+                        <table class="metricTable">
+                            <tr><td class="bold">MSE:</td><td>{TEST_MSE}</td></tr>
+                            <tr><td class="bold">RMSE:</td><td>{TEST_RMSE}</td></tr>
+                            <tr><td class="bold">R<sup>2</sup>:</td><td>{TEST_R2}</td></tr>
+                        </table>
+                        <img src="{TESTINGACC_PNG}">
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+        
+        <p>
+
+        <!-- Grid to show feature imp and feature list  -->
+        <div class="results-grid-container">
+
+            <div class="grid-col1">
+                <H2>Feature Importance:</H2>
+                <img src="{FEATUREIMP_PNG}">
+            </div>
+
+            <div class="grid-col2">
+                <div class="results-grid-container">
+                    <div>
+                        <H2>Feature List:</H2>
+                        <H3>(order by index)</H3>
+                        {FEATURELIST}
+                    </div>
+                    <div>
+                        <H2 class="textwhite">Feature List: </H2>
+                        <H3>(order by importance)</H3>
+                        {ORDEREDFEATURES}
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Proximity matrix -->
+        <div style="display:{SHOW_PROX}">
+            <H3>Proximity Matrix:</H3> 
+            <img src="{PROXIMITY_PNG}">
+        </div>
+        <p>
+        
+    </body>                        
+</html>

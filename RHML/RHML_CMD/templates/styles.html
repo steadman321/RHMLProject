@@ -1,0 +1,125 @@
+<style> 
+    body{
+        margin: 25px;
+    }
+    .defaultTable{
+        margin: 25px 0;
+        font-size: 0.9em;
+        font-family: sans-serif;
+        min-width: 400px;
+        width:100%
+    } 
+    .defaultTableHeader{
+        background-color: #1f77b4;
+        color: #ffffff;
+        text-align: left;
+
+    }
+    .defaultTable tbody tr:nth-of-type(even) {
+        background-color: #f3f3f3;
+    }
+    .confMatrixTable{
+        width:1px;
+        display:table;    
+        text-align: center; 
+        vertical-align: middle;
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: 0.9em;
+        font-family: sans-serif;
+        min-width: 400px;
+        border-width: 0px;
+    }
+
+    .confMatrixTable td{
+        padding: 5px 5px;
+    }
+
+    .confMatrixTableSide{
+        min-width: 120px;
+        width: 120px;
+    }
+    .confMatrixTable tr{
+        border-width: 0px;
+    }
+    .confMatrixTable tbody tr:nth-of-type(even) {
+        background-color: #f3f3f3;
+    }
+    .confMatrixDiag{
+        background-color: #1f77b4;
+    }
+
+    .results-grid-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+    }
+    .results-grid-container-3{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+    }
+
+
+    .textwhite{
+        color:white;
+    }
+        
+    .metricTable {
+        font-size: larger
+
+    }
+    .bold{
+        font-weight: bolder;
+    }
+    .treeStructureDiv{
+        max-height: 500px;
+        overflow: auto;
+    }
+
+
+
+    .results_col_border_right{
+        border-right-style: solid;
+        border-width: 0.5px;
+    }
+
+    .multiPlot{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+    }
+    .conf_matrix{
+        padding-right: 20px;
+    }
+
+    .cmatrix_header{
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+    }
+    .cmatrix_header_side{
+        border-right-style: solid;
+        border-right-width: 1px;
+    }
+    .cmatrix_title_text{
+        padding: 0px !important;
+        font-size: smaller;
+        font-weight: bold;
+    }
+    .report_desc{
+        margin: 0px;
+        text-decoration: underline;
+        text-align: center;
+    }
+
+    summary:focus {
+        outline-style: none;
+    }
+    summary{
+        font-style: normal;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+</style>

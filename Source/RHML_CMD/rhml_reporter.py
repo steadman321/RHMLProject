@@ -324,7 +324,7 @@ def buildMultiModelReport( dataName,featuresToSkip,reportTitle,reportDesc, model
     plotPNG = module_dir_path+'/reports/multimodel/figs/'+reportTitle+'_plot.png'
 
     # when ref img src we want relative paths only, as these are safer in most browsers
-    plotPNG_relpath = 'multimodel/figs/'+reportTitle+'_plot.png'
+    plotPNG_relpath = 'figs/'+reportTitle+'_plot.png'
 
     filelink = 'file:///'+filename
 

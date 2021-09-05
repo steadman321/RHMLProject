@@ -38,12 +38,18 @@ def buildReport(dataName, problemType,title,desc,featureList,featuresToSkip,mode
     oobAccPNG = module_dir_path+'/reports/figs/'+title+'_oobAcc.png'
     proximityPNG = module_dir_path+'/reports/figs/'+title+'_proximity.png'
     dataOverviewFilename = module_dir_path+'/data/'+dataName+'/'+dataName+'.html'
+
+    # when ref img src we want relative paths only, as these are safer in most browsers
+    featureImpPNG_relpath   = 'figs/'+title+'_featureImp.png'
+    trainingAccPNG_relpath  = 'figs/'+title+'_trainingAcc.png'
+    testingAccPNG_relpath   = 'figs/'+title+'_testingAcc.png'
+    oobAccPNG_relpath       = 'figs/'+title+'_oobAcc.png'
+    proximityPNG_relpath    = 'figs/'+title+'_proximity.png'
     
     # add some details on the data used 
     dataDetailsHtml = getDataDetailsHtml(dataOverviewFilename)
 
-    import urllib.parse
-    filelink = 'file:///'+urllib.parse.quote(filename)
+    filelink = 'file:///'+filename
 
     # read in base template
     if doingClassification:
@@ -144,6 +150,7 @@ def buildReport(dataName, problemType,title,desc,featureList,featuresToSkip,mode
             oobRMSESection = str(math.sqrt(modelOOBResults[1]))
     else:
         oobAccPNG=""
+        oobAccPNG_relpath=""
 
 
     # get the kwargs into a html format to display too:
@@ -168,7 +175,9 @@ def buildReport(dataName, problemType,title,desc,featureList,featuresToSkip,mode
         showProximity=""
     else:
         proximityPNG=""
+        proximityPNG_relpath=""
         showProximity="none"
+
 
     reportValues = {
         "TITLE":title,
@@ -177,16 +186,16 @@ def buildReport(dataName, problemType,title,desc,featureList,featuresToSkip,mode
         "SHOW_TREE_STRUCTURE":showTreeStructure,
         "NODEINFO":nodeSection,
         "STYLE":styleSection,
-        "FEATUREIMP_PNG":featureImpPNG,
-        "TRAININGACC_PNG":trainingAccPNG,
-        "TESTINGACC_PNG":testingAccPNG,
+        "FEATUREIMP_PNG":featureImpPNG_relpath,
+        "TRAININGACC_PNG":trainingAccPNG_relpath,
+        "TESTINGACC_PNG":testingAccPNG_relpath,
         "FEATURELIST":featureListHtml,
         "ORDEREDFEATURES":orderedFeaturesHtml,
         "DATADETAILS":dataDetailsHtml,
         "SHOW_SKIPS":showSkips,
         "SKIPPED_FEATURE_DETAILS":skipinfo,
-        "PROXIMITY_PNG":proximityPNG,
-        "OOBACC_PNG":oobAccPNG,
+        "PROXIMITY_PNG":proximityPNG_relpath,
+        "OOBACC_PNG":oobAccPNG_relpath,
         "OOB_CMATRIX":oobCMatrixSection,
         "OOB_ACC":oobAccSection,
         "SHOW_OOB":showOOB,
@@ -238,9 +247,11 @@ def buildGridSearchReport( dataName,featuresToSkip,title,desc,searchParamGrid,gr
     module_dir_path = os.path.dirname(os.path.realpath(__file__))
     filename = module_dir_path+'/reports/'+title+'_report.html'
     gridSearchPlotPNG = module_dir_path+'/reports/figs/'+title+'_gridSearchPlot.png'
-    import urllib.parse
-    filelink = 'file:///'+urllib.parse.quote(filename)
+    filelink = 'file:///'+filename
     dataOverviewFilename = module_dir_path+'/data/'+dataName+'/'+dataName+'.html'
+
+    # when ref img src we want relative paths only, as these are safer in most browsers
+    gridSearchPlotPNG_relpath = 'figs/'+title+'_gridSearchPlot.png'
     
     # add some details on the data used 
     dataDetailsHtml = getDataDetailsHtml(dataOverviewFilename)
@@ -265,6 +276,7 @@ def buildGridSearchReport( dataName,featuresToSkip,title,desc,searchParamGrid,gr
         gridResultsPlotHtml = getGridSearchResultsHeatPlotHtml(searchParamGrid,grid,grid_results,gridSearchPlotPNG)
     else:
         gridSearchPlotPNG=""
+        gridSearchPlotPNG_relpath=""
 
     # add some details about any features skipped (could be none , in which case hide this bit!)
     showSkips=""
@@ -283,7 +295,7 @@ def buildGridSearchReport( dataName,featuresToSkip,title,desc,searchParamGrid,gr
         "STYLE":styleSection,
         "HYPERPARAMS":modelHyperparams,
         "GRIDRESULTSTABLE":gridResultsHtml,
-        "GRIDRESULTS_PNG":gridSearchPlotPNG,
+        "GRIDRESULTS_PNG":gridSearchPlotPNG_relpath,
         "DATADETAILS":dataDetailsHtml,
         "SHOW_SKIPS":showSkips,
         "SKIPPED_FEATURE_DETAILS":skipinfo
@@ -311,8 +323,10 @@ def buildMultiModelReport( dataName,featuresToSkip,reportTitle,reportDesc, model
     filename = module_dir_path+'/reports/multimodel/'+reportTitle+'_report.html'
     plotPNG = module_dir_path+'/reports/multimodel/figs/'+reportTitle+'_plot.png'
 
-    import urllib.parse
-    filelink = 'file:///'+urllib.parse.quote(filename)
+    # when ref img src we want relative paths only, as these are safer in most browsers
+    plotPNG_relpath = 'multimodel/figs/'+reportTitle+'_plot.png'
+
+    filelink = 'file:///'+filename
 
     # read in base template
     htmlTemplate = getTemplateAsString("multiModelReportTemplate.html")
@@ -350,7 +364,7 @@ def buildMultiModelReport( dataName,featuresToSkip,reportTitle,reportDesc, model
         "TITLE":reportTitle,
         "DESC":reportDesc,
         "STYLE":styleSection,
-        "PLOT_PNG":plotPNG,
+        "PLOT_PNG":plotPNG_relpath,
         "DATADETAILS":dataDetailsHtml,
         "SHOW_SKIPS":showSkips,
         "SKIPPED_FEATURE_DETAILS":skipinfo,

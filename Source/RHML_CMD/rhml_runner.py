@@ -201,7 +201,7 @@ def runGridSearch(dataName,featuresToSkip,theData,theLabels,theFeatures,problemT
     print(f"Settings to use are : {grid[best_index]}")
 
     # Report and plots ..... 
-    reportTitleRoot = "Grid Search Report : "
+    reportTitleRoot = "Grid Search Report - "
     # get title from config if we have one set
     reportDesc = rhml_configreader.getDescriptionFromConfig(configReader)
     configTitle = rhml_configreader.getTitleFromConfig(configReader)

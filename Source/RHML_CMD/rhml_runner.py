@@ -91,7 +91,7 @@ def runSingleSplit(dataName,featuresToSkip,theData,theLabels,theFeatures,problem
             # Some things report more things .... eg. proximity matrix for RF and Bags ... 
             proximityMatrix= calcProximityMatrix(theModel,X_train)
 
-            reportTitle = reportTitleRoot+": "+theModel.getModelType()
+            reportTitle = reportTitleRoot+" - "+theModel.getModelType()
             rhml_reporter.buildReport(  dataName,
                                         problemType,
                                         reportTitle,
@@ -206,7 +206,7 @@ def runGridSearch(dataName,featuresToSkip,theData,theLabels,theFeatures,problemT
     reportDesc = rhml_configreader.getDescriptionFromConfig(configReader)
     configTitle = rhml_configreader.getTitleFromConfig(configReader)
     if configTitle !="":
-        reportTitleRoot = configTitle+": "+reportTitleRoot
+        reportTitleRoot = configTitle+" - "+reportTitleRoot
 
     reportTitle = reportTitleRoot+theModel.getModelType()
     rhml_reporter.buildGridSearchReport( dataName,featuresToSkip,reportTitle,reportDesc,searchParamGrid,grid,grid_results,best_index,modelKwargs)
@@ -306,11 +306,11 @@ def runMultiModel(dataName,featuresToSkip,theData,theLabels,theFeatures,problemT
     # now plot it : note this would be in a report at some point instead but just plot it for now
     # plotMultiModel(models_run,movingParameters[0],movingParamaterValues[0],training_results_cache,testing_results_cache)
 
-    reportTitle = "Multi Model Report : "
+    reportTitle = "Multi Model Report - "
     reportDesc = rhml_configreader.getDescriptionFromConfig(configReader)
     configTitle = rhml_configreader.getTitleFromConfig(configReader)
     if configTitle !="":
-        reportTitle = reportTitle+" "+configTitle #configTitle+": "+reportTitle
+        reportTitle = reportTitle+" "+configTitle
     rhml_reporter.buildMultiModelReport( dataName,featuresToSkip,reportTitle,reportDesc,models_run,model_kwargs,movingParameters[0],movingParamaterValues[0],training_results_cache,testing_results_cache,oob_results_cache)
 #****************************************************************************************#****************************************************************************************
 

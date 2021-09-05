@@ -17,5 +17,5 @@ The steps below include creating a virtual environment within which to install t
 Once the install is complete (and assuming your virtual environment is still active) you can test that all things are working by running one of the pre-canned experiments
 
 * cd ./RHML_CMD
-* python3 ./rhml_cmd.py -config= ./config/classification/wine/test1.ini
+* python3 ./rhml_cmd.py -config=./config/classification/wine/test1.ini
 * The experiment should result in your default browser opening and showing the created report

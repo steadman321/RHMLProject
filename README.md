@@ -6,11 +6,17 @@ You need to have Python installed. This project was built using Python 3.8.2, bu
 ## Installation
 The steps below include creating a virtual environment within which to install the project dependencies; although this step is optional, to avoid issues with different versions of Python libraries that are already installed on your system this is highly recommended.
 
+NOTE: 'python3' and 'pip3' could be 'python' and 'pip' on your system. Check the version is correct before using them.
+
 * Copy RHMLProject-main.zip to a local directory
 * unzip RHMLProject-main.zip
 * cd RHMLProject-main/Source
 * python3 -m venv projectenv
-* source ./projectenv/bin/activate
+* Activate the virutal env:
+  * Mac/Linux:
+    * source ./projectenv/bin/activate
+  * Windows:
+    * .\projectenv\Scripts\activate.bat
 * pip3 install -r ./RHML/requirements
 
 ## Test Installation 
